@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Mobtech </title>
+
+		<!--Ubaci bootstrap css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="css/basic-template.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> <!-- Nas font -->
+
+	</head>
+	<body>
+		<!-- Dugme - strelica koja vraca na vrh strane -->
+		<a href="#" class="back-to-top">Back to Top</a>
+
+		<!--Navigation bar -->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-container">
+						<span class="sr-only"> Pokazi i sakrij navigaciju </span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						 <span> <img src="Slike/logo.png" alt="LogoSlika"/> </span>
+						<font face="Roboto Condensed" size="4" color="green"> Mobtech </font>
+					</a>
+				</div> 
+				<div class="collapse navbar-collapse" id="navbar-container">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#"> Početna strana </a> </li>
+						<li><a href="privatni.html"> Privatni korisnici </a> </li>
+						<li><a href="poslovni.html"> Poslovni korisnici </a> </li>
+						<li><a href="uredjaji.html"> Uređaji </a> </li>
+						<li><a href="onama.html"> O Nama </a> </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--Slider -->
+		<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-sm-12" style="padding: 0 !important;"> 
+						
+						<div id="mojslider" class="carousel slide" data-ride="carousel">
+
+							<!-- Indikatori (male tacke na slajderu) -->
+							<ol class="carousel-indicators">
+								<li data-target="#mojslider" data-slider-to="0" class="active"> </li>
+								<li data-target="#mojslider" data-slider-to="1"> </li>
+								<li data-target="#mojslider" data-slider-to="2"> </li>
+							</ol>
+							<!-- Slajd-slike -->
+							<div class="carousel-inner" role="listbox">
+								<!--Svaki div je jedan slajd -->
+								<div class="item active">
+									<img src="Slike/samsung.png" alt="samsungslide" />
+									<div class="carousel-caption">
+										<h1> <font face="Roboto Condensed" size="15" color="white"> Samsung Galaxy s7  </font> </h1>
+									</div>
+								</div>
+								<div class="item">
+									<img src="Slike/iphone.png" alt="iphoneslide" />
+									<div class="carousel-caption">
+										<h1> <font face="Roboto Condensed" size="15" color="white"> iPhone 7 </font> </h1>
+									</div>
+								</div>
+								<div class="item">
+									<img src="Slike/lg.png" alt="lglide" />
+									<div class="carousel-caption">
+										<h1> <font face="Roboto Condensed" size="15" color="white"> LG V10 </font> </h1>
+									</div>
+								</div>
+							</div>
+							<!-- Kontrole - next i prev dugme -->
+							<a class="left carousel-control" href="#mojslider" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span>
+							</a>
+							<a class="right carousel-control" href="#mojslider" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>
+							</a>
+
+
+						</div>
+
+					</div>
+				</div>
+		</div>
+
+		<br/>
+
+		<!--Container 1 - Mobtech - uvek sa Vama! -->
+		<div class="container-fluid bg-zelenapozadina">
+				<div class="container"> 
+					<div class="row">
+						<!-- Kolona na velikom ekranu (lg) prikazuje duzinu jedne kolone, Ekstra small (xs) prikazuje 4 kolone -->
+						<div class="col-lg-12 bg-zelenapozadina"> 
+							<div class="col-lg-12 bg-zelenapozadina">
+								<center> <font face="Roboto Condensed" size="6"> Mobtech - uvek sa Vama ! </font> </center> <hr class="teksthori"/>
+								<p> 
+								<font face="Roboto Condensed" size="4"> 
+								Mobtech mobile Vam nudi najbolje uređaje po najpovoljnijim cenama u Srbiji ! Pored najbržeg interneta, imate i mogućnost uživati u besplatnim pozivima i porukama prema drugim Mobtech korisnika. Signal nije problem u Mobtechu. <br/> Da li se nalazite u centru grada ili na vrhu puste planine, signal Mobtecha je uvek najbolji ! <br/>
+
+
+								Mobtech mobile ima član Telekom Austrija Grupe, koja ima više od 24 miliona korisnika u osam zemalja regiona i poznata je kao lider u inovacijama. Od 1. maja 2016. godine Mobtech mobile posluje u okviru TAG organizacione jedinice „Srbija & Slovenija”. Izaberite najbolju mobile kompaniju danas. <br/>
+								<hr class="teksthori"/>
+								</font>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<br/>
+
+		<!--Container 2 - Popust studentima -->
+		<div class="container"> 
+				<div class="row">
+					<div class="col-lg-12 col-md-12 bg-zelenapozadina""> 
+						<div class="col-lg-5 col-md-5 bg-zelenapozadina">
+								<center> <font face="Roboto Condensed" size="6"> Popust studentima </font> </center> <hr class="teksthori"/>
+								<p>
+								<font face="Roboto Condensed" size="4"> 
+								U Mobtechu smatramo da studenti zaslužuju najbolje uređaje i najbolje cene. <br/><br/>Zato do kraja godine, svaki student ima specijalnu ponudu za naše Zvezda, Sunce i Galaksija pakete. <br/>Popust možete dobiti tako što predstavite vaš indeks i ličnu kartu našem poslodavcu, nakon toga možete uživati u vašem novog paketu i uređaju! <br/> 
+
+								</font>
+								</p>
+						</div>
+
+						<div class="col-lg-7 col-md-7 bg-zelenapozadina" style="padding: 10px;">
+							<center> <img src="Slike/studenti.jpg" class="img-responsive img-rounded"> </center>
+						</div>
+
+					</div>
+				</div>
+		</div>
+
+		<br/>
+
+		<!--Container 3 - Skype kredit -->
+		<div class="container"> 
+				<div class="row">
+					<div class="col-lg-12 col-md-12 bg-zelenapozadina""> 
+						<div class="col-lg-7 col-md-7 bg-zelenapozadina" style="padding: 10px;">
+							<center> <img src="Slike/skypekredit.png" class="img-responsive img-rounded"> </center>
+						</div>
+						<div class="col-lg-5 col-md-5 bg-zelenapozadina">
+								<center> <font face="Roboto Condensed" size="6"> Skype kredit </font> </center> <hr class="teksthori"/>
+								<p>
+								<font face="Roboto Condensed" size="4"> 
+								Naši prijatelji u Microsoftu su odlučili da nagrade sve naše poslovne korisnike skype kreditom. Sada možete zvati, slati sms poruke sve preko vašeg skype naloga besplatno! <br/> Povežite Vaš Skype nalog i mobtech servis i ostvari ovu akciju. Ponuda važi do kraja godine. <br/> Pogledajte naše poslovne pakete i izaberite pravu odluku.
+
+								</font>
+								</p>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<br/>
+			
+		<!--Container 4 - Roaming paketi -->
+		<div class="container"> 
+				<div class="row">
+					<div class="col-lg-12 col-md-12 bg-zelenapozadina""> 
+						<div class="col-lg-5 col-md-5 bg-zelenapozadina">
+								<center> <font face="Roboto Condensed" size="6"> Roaming paketi  </font> </center> <hr class="teksthori"/>
+								<p>
+								<font face="Roboto Condensed" size="4"> 
+								Ako ste poslovni korisnik Motecha i stalno putujute, onda je Roaming Paket za Vas. Sa Roaming paketom imate više poruka i minuta ka ostalim mrežama u inostranstvu, dok su vaši pozivi drugih Mobtech korisnika i poziva u okviru firme i dalje besplatna! <br/> Pogledajte naše Roaming Pakete i naš Mobtech predstavnik će Vas kontaktirati.
+								</font>
+								</p>
+						</div>
+
+						<div class="col-lg-7 col-md-7 bg-zelenapozadina" style="padding: 10px;">
+							<center> <img src="Slike/roaming.jpg" class="img-responsive img-rounded"> </center>
+						</div>
+
+					</div>
+				</div>
+		</div>
+
+		<br/>
+
+		<!--Container 5 - Novo u Mobtechu -->
+		<div class="container-fluid bg-zelenapozadina">
+			<div class="container"> 
+				<div class="row">
+					<!-- Kolona na velikom ekranu (lg) prikazuje duzinu jedne kolone, Ekstra small (xs) prikazuje 4 kolone -->
+					<div class="col-lg-12 col-md-12 col-xs-12 bg-zelenapozadina" style="padding-bottom: 10px;"> 
+						<div class="col-lg-12 col-xs-12 bg-zelenapozadina">
+							<center> <font face="Roboto Condensed" size="6"> Novo u Mobtechu </font> </center> <hr class="teksthori"/>
+							<div class="col-lg-3 col-xs-6">
+								<center> <img src="Slike/prvapon.png" class="img-responsive img-circle"> </center>
+							</div>
+							<div class="col-lg-3 col-xs-6">
+								<center> <img src="Slike/drugapon.png" class="img-responsive img-circle"> </center>
+							</div>
+							<div class="col-lg-3 col-xs-6">
+								<center> <img src="Slike/trecapon.png" class="img-responsive img-circle"> </center>
+							</div>
+							<div class="col-lg-3 col-xs-6">
+								<center> <img src="Slike/cetvrtapon.png" class="img-responsive img-circle"> </center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br/>
+			
+		<!-- Footer -->
+		<footer class="mojFooter">
+				<font face="Roboto Condensed" size="4"> <center>
+				<div class="container">
+					<div class="row" style="margin-top: 7px;">
+						 <p> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &copy; Copyright Ivan Prošić 2016.</p> 
+					</div>
+					<div class="bottom-footer">
+						<div class="col-md-12"> 
+							<ul class="footer-nav">
+								<li> <a href="https://www.facebook.com/"> Facebook </a> </li>
+								<li> <a href="https://twitter.com/"> Twitter </a> </li>
+								<li> <a href="https://plus.google.com/"> Google+ </a> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</font> </center>
+		</footer>
+		
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script>
+			var amountScrolled = 300;
+				$(window).scroll(function() {
+					if ( $(window).scrollTop() > amountScrolled ) {
+						$('a.back-to-top').fadeIn('slow');
+					} else {
+						$('a.back-to-top').fadeOut('slow');
+					}
+				});
+				$('a.back-to-top').click(function() {
+					$('html, body').animate({
+						scrollTop: 0
+					}, 700);
+					return false;
+				});
+		</script>
+	</body>
+</html>

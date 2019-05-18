@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Mobtech - Uređaji </title>
+
+		<!--Ubaci bootstrap css -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+		<link href="css/bootstrap-slider.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" rel="css/basic-template.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-slider.min.js"></script>
+		<script src="js/mojaSkriptaPrivatni.js"></script>
+
+		 <link rel="stylesheet" type="text/css" href="js/tooltipster/dist/css/tooltipster.bundle.min.css" />
+		 <script type="text/javascript" src="js/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+
+		  <link rel="stylesheet" type="text/css" href="js/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
+		
+
+	</head>
+	<body>
+		<!-- Dugme - strelica koja vraca na vrh strane -->
+		<a href="#" class="back-to-top">Back to Top</a>
+
+		<!--Navigation bar -->
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-container">
+						<span class="sr-only"> Pokazi i sakrij navigaciju </span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						 <span> <img src="Slike/logo.png" alt="LogoSlika"/> </span>
+						<font face="Roboto Condensed" size="4" color="green"> Mobtech </font>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-container">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html"> Početna strana </a> </li>
+						<li><a href="privatni.html"> Privatni korisnici </a> </li>
+						<li><a href="poslovni.html"> Poslovni korisnici </a> </li>
+						<li class="active"><a href="#"> Uređaji </a> </li>
+						<li><a href="onama.html"> O Nama </a> </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--Jumbotron-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 jumbotron">
+					<div class="text-center fontokreci">
+						 <h1> Postanite  <br/>mobtech korisnik <br/> danas! </h1> </font>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Izaberite uredjaj -->
+		<div class="container-fluid bg-zelenapozadina">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 bg-zelenapozadina">
+						<div class="col-lg-12">
+							<center> <font face="Roboto Condensed" size="6"> Izaberite uređaj </font> </center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br/>
+
+		<!-- Filter uredjaj -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+ 					<center>
+						<div class="okreci_select">
+							<select onchange="changeImageTwo(this)" id="selectid">
+							  <option value="samsung">Samsung</option>
+							  <option value="apple">Apple</option>
+							  <option value="lg">LG</option>
+							  <option value="htc">HTC</option>
+							</select>
+						</div>
+					</center>
+					</div>
+				</div>
+			</div>
+			<hr/>
+		</div>
+
+
+		<!-- Uredjaj u zavisnosti od filtera-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="col-lg-4 text-center">
+
+						<img id="IzabranUredjajl" class="nestani tooltipsterIvan" src="Slike/urSamsungS7.png"
+						title="<center> <b> Specifikacije: </b> </center> <b> Display: </b> Super AMOLED capacitive touchscreen, 16M colors <br/>  <b> CPU: </b> Octa-core (4x2.3 GHz Mongoose & 4x1.6 GHz Cortex-A53) <br/> <b> Memorija: </b> 32/64 GB, 4 GB RAM <br/> <b> Baterija: </b> 3000 mAh <br> <b> Kamera: </b> 12 MP/5MP"/>
+
+						<h3 id="IUNaslov1" class="nestani" style="font-family: Roboto Condensed;"> Samsung Galaxy S7</h3>
+						<h5 id="IUOpis1" class="nestani" style="font-family: Roboto Condensed; font-size: 16px;"> 5.1 inča / 12MP / Android / 6.0 Marshmallow </h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-size: 20px; font-family: Roboto Condensed;"> Kupi online!</button>
+					</div>
+					<div class="col-lg-4 text-center">
+
+						<img id="IzabranUredjaj2" class="nestani tooltipsterIvan" src="Slike/urSamsungA3.png"
+						title="<center> <b> Specifikacije: </b> </center> <b> Display: </b> Super AMOLED capacitive touchscreen, 16M colors <br/>  <b> CPU: </b> Quad-core 1.5 GHz Cortex-A53 <br/> <b> Memorija: </b> 16 GB, 1.5 GB RAM <br/> <b> Baterija: </b> 2300 mAh <br> <b> Kamera: </b> 13 MP/5MP"/>
+
+						<h3 id="IUNaslov2" class="nestani" style="font-family: Roboto Condensed;"> Samsung Galaxy A3</h3>
+						<h5 id="IUOpis2" class="nestani" style="font-family: Roboto Condensed; font-size: 16px;"> 4.7 inča / 13MP / Android / 6.0 Marshmallow </h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-size: 20px; font-family: Roboto Condensed;"> Kupi online!</button>
+					</div>
+					<div class="col-lg-4 text-center">
+
+						<img id="IzabranUredjaj3" class="nestani tooltipsterIvan" src="Slike/urSamsungJ5.png"
+						title="<center> <b> Specifikacije: </b> </center> <b> Display: </b> Super AMOLED capacitive touchscreen, 16M colors <br/>  <b> CPU: </b> Quad-core 1.2 GHz Cortex-A53 <br/> <b> Memorija: </b> 16 GB, 2 GB RAM <br/> <b> Baterija: </b> 3100 mAh <br> <b> Kamera: </b> 13 MP/5MP"/>
+
+						<h3 id="IUNaslov3" class="nestani" style="font-family: Roboto Condensed;"> Samsung Galaxy J5</h3>
+						<h5 id="IUOpis3" class="nestani" style="font-family: Roboto Condensed; font-size: 16px;"> 5.2 inča / 13MP / Android / 6.1 Marshmallow </h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-size: 20px; font-family: Roboto Condensed;"> Kupi online!</button>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="col-lg-4 text-center">
+
+						<img id="IzabranUredjaj4" class="nestani tooltipsterIvan" src="Slike/urSamsungJ3.png"
+						title="<center> <b> Specifikacije: </b> </center> <b> Display: </b> Super AMOLED capacitive touchscreen, 16M colors <br/>  <b> CPU: </b> Quad-core 1.5 GHz Cortex-A7 <br/> <b> Memorija: </b> 8/16 GB, 1.5 GB RAM <br/> <b> Baterija: </b> 2600 mAh <br> <b> Kamera: </b> 8/5 MP/ 5/2MP"/>
+
+						<h3 id="IUNaslov4" class="nestani" style="font-family: Roboto Condensed;"> Samsung Galaxy J3</h3>
+						<h5 id="IUOpis4" class="nestani" style="font-family: Roboto Condensed; font-size: 16px;"> 5.0 inča / 8MP / Android / 5.1 Lollipop </h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-size: 20px; font-family: Roboto Condensed;"> Kupi online!</button>
+					</div>
+					<div class="col-lg-4 text-center">
+
+						<img id="IzabranUredjaj5" class="nestani tooltipsterIvan" src="Slike/urSamsungJ7.png"
+						title="<center> <b> Specifikacije: </b> </center> <b> Display: </b> Super AMOLED capacitive touchscreen, 16M colors <br/>  <b> CPU: </b> Octa-core (4x1.6 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53) <br/> <b> Memorija: </b> 16 GB, 2 GB RAM <br/> <b> Baterija: </b> 3300 mAh <br> <b> Kamera: </b> 13 MP/5MP"/>
+
+						<h3 id="IUNaslov5" class="nestani" style="font-family: Roboto Condensed;"> Samsung Galaxy J7</h3>
+						<h5 id="IUOpis5" class="nestani" style="font-family: Roboto Condensed; font-size: 16px;"> 5.5 inča / 13MP / Android / 6.1 Marshmallow </h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-size: 20px; font-family: Roboto Condensed;"> Kupi online!</button>
+					</div>
+					<div class="col-lg-4 text-center">
+
+						<img id="IzabranUredjaj6" class="nestani tooltipsterIvan" src="Slike/urSamsungS6.png"
+						title="<center> <b> Specifikacije: </b> </center> <b> Display: </b> Super AMOLED capacitive touchscreen, 16M colors <br/>  <b> CPU: </b> Octa-core (4x2.1 GHz Cortex-A57 & 4x1.5 GHz Cortex-A53) <br/> <b> Memorija: </b> 32/64/128 GB, 3 GB RAM <br/> <b> Baterija: </b> 2550 mAh <br> <b> Kamera: </b> 16 MP/5MP"/>
+
+						<h3 id="IUNaslov6" class="nestani" style="font-family: Roboto Condensed;"> Samsung Galaxy S6</h3>
+						<h5 id="IUOpis6" class="nestani" style="font-family: Roboto Condensed; font-size: 16px;"> 5.1 inča / 16MP / Android / 5.0 Lollipop </h5>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="font-size: 20px; font-family: Roboto Condensed;"> Kupi online!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="exampleModalLabel"> <center> Kupovina online </center></h4>
+		      </div>
+		      <div class="modal-body">
+		        <form action="update.php" method="post">
+		          <div class="form-group">
+		            <label for="recipient-name" class="control-label">Ime i Prezime:</label>
+		            <input type="text" class="form-control" id="recipient-name" name="Ime_i_Prezime">
+		          </div>
+		          <div class="form-group">
+		            <label for="recipient-phone" class="control-label">Telefon</label>
+		            <input type="text" class="form-control" id="recipient-names" name="Telefon">
+		          </div>
+		          <div class="form-group">
+		            <label for="message-text" class="control-label">Adresa:</label>
+		            <textarea class="form-control" id="message-text" name="Adresa"></textarea>
+		          </div>
+		          <label for="paketizaberi" class="control-label">Paket:</label>
+		          <select class="form-control" id="paketizaberi" name="Paket">
+				    <option value="Zvezda">Zvezda</option>
+				    <option value="Sunce">Sunce</option>
+				    <option value="Galaksija">Galaksija</option>
+				  </select>
+                     <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Otkaži</button>
+		        <button type="button" class="btn btn-primary show-modal mdl-button">Naruči</button>
+
+		        <dialog class="mdl-dialog">
+				    <div class="mdl-dialog__content">
+				      <p>
+						<h3 style="font-family: Roboto Condensed; font-size: 20px;">Uspešno ste naručili telefon! </h3>      
+					  </p>
+				    </div>
+				    <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+				      		<button type="submit" class="mdl-button btn-primary" style="font-family: Roboto Condensed; font-size: 20px;">U redu</button>
+				    </div>
+				</dialog>
+		      </div>
+		        </form>
+		      </div>
+		      
+		    </div>
+		  </div>
+		</div>
+
+		<br/>
+
+		<!--
+		<center> <div id ="pokazimakscenu"> test </div> </center>
+		-->
+
+		<!-- Linija -->
+		<div class="container-fluid bg-zelenapozadina">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 bg-zelenapozadina">
+						<div class="col-lg-12">
+							<center> <font face="Roboto Condensed" size="6"> <div style="color: #00a651">  Mobtech </div> </font> </center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br/>
+
+		<!--Jumbotron podrska-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 jumbotron other-podrska">
+					<div class="text-center fontokreci" style="padding-right: 30px;">
+						 <h1> Mobtech podrška   <br/> je uvek dostupna <br/>+381/ 60 000 123  </h1> </font>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="mojFooter">
+				<font face="Roboto Condensed" size="4"> <center>
+				<div class="container">
+					<div class="row" style="margin-top: 7px;">
+						 <p> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &copy; Copyright Ivan Prošić 2016.</p>
+					</div>
+					<div class="bottom-footer">
+						<div class="col-md-12">
+							<ul class="footer-nav">
+								<li> <a href="https://www.facebook.com/"> Facebook </a> </li>
+								<li> <a href="https://twitter.com/"> Twitter </a> </li>
+								<li> <a href="https://plus.google.com/"> Google+ </a> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</font> </center>
+		</footer>
+
+			<script>
+				//Prikaz slidera
+				$("#ex6").slider();
+				$("#ex6").on("slide", function(slideEvt) {
+					$("#ex6SliderVal").text(slideEvt.value);
+				});
+
+
+				$('.slider').on('slide', function (ev) {
+					/*
+					console.log($('#ex6').val());
+					document.getElementById("pokazimakscenu").innerHTML = ($('#ex6').val()); //Prikazi na ekranu koliko je izabrao maks cenu
+					*/
+
+					var gledajcenu = ($('#ex6').val());
+					max_cena(gledajcenu);
+				});
+				var amountScrolled = 300;
+				$(window).scroll(function() {
+					if ( $(window).scrollTop() > amountScrolled ) {
+						$('a.back-to-top').fadeIn('slow');
+					} else {
+						$('a.back-to-top').fadeOut('slow');
+					}
+				});
+				$('a.back-to-top').click(function() {
+					$('html, body').animate({
+						scrollTop: 0
+					}, 700);
+					return false;
+				});
+
+				 $(document).ready(function() {
+		            $('.tooltipsterIvan').tooltipster({
+		            	theme: 'tooltipster-shadow',
+		            	 animation: 'grow',
+   						 delay: 100,
+   						 trigger: 'hover',
+   						 side: 'left',
+   						 contentAsHTML: true,
+   						 maxWidth: 300  
+		            });
+		         });
+
+
+		         var dialog = document.querySelector('dialog');
+			    var showModalButton = document.querySelector('.show-modal');
+			    if (! dialog.showModal) {
+			      dialogPolyfill.registerDialog(dialog);
+			    }
+			    showModalButton.addEventListener('click', function() {
+			      dialog.showModal();
+			    });
+			    dialog.querySelector('.close').addEventListener('click', function() {
+			      dialog.close();
+			    });
+			</script>
+	</body>
+</html>
